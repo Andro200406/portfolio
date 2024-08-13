@@ -1,4 +1,4 @@
-// Smooth Scrolling
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -19,7 +19,6 @@ navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('open');
 });
 
-// Scroll-Triggered Animations
 const sections = document.querySelectorAll('section');
 
 const options = {
