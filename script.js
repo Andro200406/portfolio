@@ -8,7 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Mobile Navigation Toggle
 const navToggle = document.createElement('div');
 navToggle.classList.add('nav-toggle');
 navToggle.innerHTML = '☰';
