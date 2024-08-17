@@ -1,4 +1,4 @@
-
+// Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,22 +8,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Mobile Navigation Toggle
 const navToggle = document.createElement('div');
 navToggle.classList.add('nav-toggle');
 navToggle.innerHTML = '☰';
 document.body.insertBefore(navToggle, document.querySelector('nav'));
 
 navToggle.addEventListener('click', () => {
-    document.querySelector('nav ul').classList.toggle('open');
+    document.querySelector('nav .nav-list').classList.toggle('open');
     navToggle.classList.toggle('open');
 });
 
+// Scroll Animation for Sections
 const sections = document.querySelectorAll('section');
 
 const options = {
-    root: null,
-    threshold: 0.25,
-    rootMargin: "0px"
+    threshold: 0.1,
 };
 
 const observer = new IntersectionObserver((entries, observer) => {

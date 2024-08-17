@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andro Dhiliban's Portfolio</title>
+    <title>Andro Dhiliban - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Andro Dhiliban I</h1>
-        <p>Data Analyst (Finance)</p>
+        <div class="header-container">
+            <img src="my profile.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="header-text">
+                <h1>Andro Dhiliban I</h1>
+                <p>Data Analyst | Full-Stack Developer | Data Scientist | Cybersecurity Specialist | AI Engineer</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
     </header>
-    
+
     <nav>
-        <ul>
+        <ul class="nav-list">
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -23,59 +29,93 @@
         </ul>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am pursuing B.TECH Artificial Intelligence and Data Science at Francis Xavier Engineering College, Tirunelveli. I am looking forward to an internship to showcase my skills. I specialize in data visualization, statistical analysis, and predictive modeling.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am currently pursuing a B.Tech in Artificial Intelligence and Data Science at Francis Xavier Engineering College, Tirunelveli. With a passion for technology and innovation, I have developed a strong foundation in data analytics, full-stack web development, data science, cybersecurity, and AI engineering. I am keen to apply my skills in real-world projects and am actively seeking opportunities for internships and collaborative projects.</p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Analyze and interprete financial data</li>
-            <li>Perform financial evaluations and analyses</li>
-            <li>Create reports and generate business insights</li>
-            <li>Aid in financial decision-making, planning, and forecasting</li>
-            <li>Develop and utilize predictive financial models</li>
-            <li>Provide insights based on complex financial data</li>
-            <li>Assist in strategic planning and investment decision-making</li>
-            <li>Conduct risk assessments and perform market research</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill-item">
+                    <h3>Data Analytics</h3>
+                    <p>Expertise in analyzing and interpreting data to provide actionable insights. Proficient in using tools such as Power BI, Python, R, and SQL.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Skilled in creating dynamic and responsive web applications. Proficient in HTML, CSS, JavaScript, React, Node.js, and various databases.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Data Science</h3>
+                    <p>Advanced knowledge in machine learning, predictive modeling, and NLP with tools like Scikit-Learn, TensorFlow, and Keras.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Cybersecurity</h3>
+                    <p>Understanding of cybersecurity principles including vulnerability assessment, penetration testing, and threat detection.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>AI Engineering</h3>
+                    <p>Proficient in developing AI solutions for tasks like image recognition and chatbot development using neural networks and deep learning frameworks.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Medsocio, Chennai, India</h3>
-        <p><strong>Data Analyst Intern</strong> - June 2024 to Present</p>
-        <ul>
-            <li>Developed data visualizations and dashboards to track business metrics using Power BI</li>
-            <li>Prepared detailed reports and presentations summarizing analytical findings</li>
-        </ul>
-    </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Medsocio, Chennai, India</h3>
+                <p><strong>Data Analyst Intern</strong> - June 2024 to Present</p>
+                <ul>
+                    <li>Developed data visualizations and dashboards using Power BI.</li>
+                    <li>Prepared reports and presentations summarizing analytical findings and provided actionable recommendations.</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Gym Watch Data Analysis</h3>
-        <p>Developed a data analysis project using gym watch data to track and visualize fitness metrics with Power BI. Cleaned and processed raw data to ensure accuracy and consistency. Created interactive dashboards displaying key metrics such as heart rate, calories burned, and workout duration.</p>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Gym Watch Data Analysis</h3>
+                <p>Developed a data analysis project using gym watch data to track and visualize fitness metrics with Power BI. Created interactive dashboards displaying key metrics such as heart rate, calories burned, and workout duration.</p>
+            </div>
+            <div class="project-item">
+                <h3>Covid-19 Analysis</h3>
+                <p>Analyzed Covid-19 data to track infection rates, recoveries, and fatalities. Created visualizations to understand the pandemic's spread and impact on different regions.</p>
+            </div>
+            <div class="project-item">
+                <h3>Delhi Metro Network Analysis</h3>
+                <p>Conducted analysis on Delhi Metro's network efficiency and passenger flow. Developed visual dashboards to identify bottlenecks and optimize metro operations.</p>
+            </div>
+            <div class="project-item">
+                <h3>AI-Powered Chatbot</h3>
+                <p>Designed and developed an AI chatbot using NLP techniques to handle customer inquiries and provide real-time support.</p>
+            </div>
+            <div class="project-item">
+                <h3>Full-Stack Portfolio Website</h3>
+                <p>Created a personal portfolio website using HTML, CSS, JavaScript, and React. Integrated a back-end API with Node.js to manage dynamic content.</p>
+            </div>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Bachelor of Technology:</strong> Artificial Intelligence & Data Science, Francis Xavier Engineering College, Tirunelveli, 2022-2026</li>
-            <li><strong>Secondary School:</strong> Computer Science-Maths, St. Anns Matric Higher Secondary School, Tirunelveli, 2020-2022</li>
-        </ul>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Technology:</strong> Artificial Intelligence & Data Science, Francis Xavier Engineering College, Tirunelveli, 2022-2026</li>
+                <li><strong>Secondary School:</strong> Computer Science-Maths, St. Anns Matric Higher Secondary School, Tirunelveli, 2020-2022</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>12/198-A, Kavalkinaru, Tirunelveli-627105, Tamilnadu.</p>
-        <p>Phone: +91 9600983502</p>
-        <p>Email: <a href="mailto:androdhiliban9@gmail.com">androdhiliban9@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/andro-dhiliban" target="_blank">linkedin.com/in/andro-dhiliban</a></p>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>12/198-A, Kavalkinaru, Tirunelveli-627105</p>
+            <p>Phone: +91 9600983502</p>
+            <p>Email: <a href="mailto:androdhiliban9@gmail.com">androdhiliban9@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/andro-dhiliban" target="_blank">linkedin.com/in/andro-dhiliban</a></p>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 Andro Dhiliban I. All rights reserved.</p>
+        <p>© 2024 Andro Dhiliban. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
